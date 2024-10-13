@@ -26,7 +26,7 @@ class WordsFinder:
 
         for name, words in self.get_all_words().items():
             if search_word in words:
-                word_positions[name] = words.index(search_word)
+                word_positions[name] = words.index(search_word)+1
 
         return word_positions
 
